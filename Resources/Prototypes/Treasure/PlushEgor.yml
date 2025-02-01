@@ -1,0 +1,29 @@
+type: entity
+  parent: BasePlushie
+  id: EgorPlush
+  name: Плюшевый Егор
+  description: Когда нибудь сделает дизбанд...
+  components:
+  - type: Sprite
+    sprite: Objects/Treasure/EgorPlush.rsi
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Treasure/EgorPlush1.ogg
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/Items/Toys/rawr.ogg
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Treasure/EgorPlush2.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Treasure/EgorPlush3.ogg
+  - type: MeleeWeapon
+    wideAnimationRotation: 180
+    soundHit:
+      path: /Audio/Treasure/EgorPlush1.ogg
+  - type: Item
+    size: Small
+  - type: Tag
+    tags:
+      - EgorPlush
